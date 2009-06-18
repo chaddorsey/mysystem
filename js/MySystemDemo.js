@@ -1,10 +1,8 @@
-var labelData = [
-{
-  name: "Energy Form Label",
-  xtype: "MySystemWireLabel"
-}
-];
 var testData = [
+  {
+    name: "Energy Form Label",
+    xtype: "MySystemWireLabel"
+  },
   {
     name: "world",
     xtype: "MySystemContainer",
@@ -52,7 +50,6 @@ var MySystemDemo = {
   init: function() {
       try {  
         this.data.setData(testData,[],true);
-		  this.data.setData(labelData,[],false);
         this.editor = new MySystemEditor(this.data);
         // this.editor.onHelp();
       }
